@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfólioFelipeUCAA</title>
-    <!-- Carrega o Tailwind CSS via CDN para estilização rápida e responsiva -->
+    <title>FelipeUCAA Portfolio</title>
+    <!-- Loads Tailwind CSS via CDN for fast and responsive styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="./IMG2/LogoPessoalFundoTransparente.png">
     <style>
-        /* Estilos personalizados para o iframe e vídeo para garantir bordas arredondadas e bom aspecto */
+        /* Custom styles for iframe and video to ensure rounded borders and good appearance */
         .borda-iframe, video {
-            border-radius: 0.75rem; /* rounded-lg em Tailwind */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md em Tailwind */
-            border: 1px solid #e2e8f0; /* border-gray-200 em Tailwind */
+            border-radius: 0.75rem; /* rounded-lg in Tailwind */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md in Tailwind */
+            border: 1px solid #e2e8f0; /* border-gray-200 in Tailwind */
         }
-        /* Ajuste para a imagem de perfil no modo mobile */
+        /* Adjustment for profile image in mobile mode */
         .minhaFoto-mobile {
-            max-width: 150px; /* Ajuste o tamanho conforme necessário para mobile */
+            max-width: 150px; /* Adjust size as needed for mobile */
             height: auto;
         }
-        /* Garantindo que o vídeo e iframe se ajustem ao contêiner */
+        /* Ensuring the video and iframe adjust to the container */
         .projeto iframe, .projeto video {
             width: 100%;
-            height: auto; /* Mantém a proporção */
-            min-height: 350px; /* Altura mínima ajustada para visualização */
+            height: auto; /* Maintains aspect ratio */
+            min-height: 350px; /* Minimum height adjusted for viewing */
         }
 
-        /* Estilos adicionais para o logotipo no topo */
+        /* Additional styles for the logo at the top */
         .logo-topo {
-            width: 90px; /* Tamanho ajustado para o logo */
+            width: 90px; /* Size adjusted for the logo */
             height: auto;
             display: inline-block;
             vertical-align: middle;
             margin-left: 10px;
         }
 
-        /* Classes para ajustar o espaçamento do parágrafo dentro dos layouts alternados */
+        /* Classes to adjust paragraph spacing within alternating layouts */
         .pprojeto-left {
-            margin-right: 1.5vw; /* Espaço à direita quando o texto está à esquerda */
+            margin-right: 1.5vw; /* Space on the right when the text is on the left */
         }
         .pprojeto-right {
-            margin-left: 1.5vw; /* Espaço à esquerda quando o texto está à direita */
+            margin-left: 1.5vw; /* Space on the left when the text is on the right */
         }
     </style>
 </head>
@@ -49,98 +49,97 @@
     <header class="bg-blue-900 text-white p-4 shadow-md">
         <nav class="container mx-auto flex justify-center">
             <ul class="flex space-x-8">
-                <li><a href="#projetos" class="hover:text-blue-200 transition-colors duration-300 text-lg font-medium">Projetos</a></li>
-                <li><a href="#sobre" class="hover:text-blue-200 transition-colors duration-300 text-lg font-medium">Sobre</a></li>
-                <li><a href="#contato" class="hover:text-blue-200 transition-colors duration-300 text-lg font-medium">Contato</a></li>
+                <li><a href="#projects" class="hover:text-blue-200 transition-colors duration-300 text-lg font-medium">Projects</a></li>
+                <li><a href="#about" class="hover:text-blue-200 transition-colors duration-300 text-lg font-medium">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-200 transition-colors duration-300 text-lg font-medium">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="projetos" class="container mx-auto p-6 md:p-10 lg:p-12 mt-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Projeto M.A.R.I.O <img src="./IMG2/LogoPessoalFundoTransparente.png" class="logo-topo" alt="Logo Pessoal"></h2>
+    <section id="projects" class="container mx-auto p-6 md:p-10 lg:p-12 mt-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">M.A.R.I.O Project <img src="./IMG2/LogoPessoalFundoTransparente.png" class="logo-topo" alt="Personal Logo"></h2>
         
-        <!-- Projeto 1: Texto na Esquerda, Mídia na Direita -->
+        <!-- Project 1: Text on the Left, Media on the Right -->
         <div class="projeto bg-white p-6 rounded-lg shadow-md mb-10 flex flex-col lg:flex-row items-center lg:space-x-8">
             <p class="pprojeto text-lg lg:text-xl text-gray-700 text-center lg:text-left mb-6 lg:mb-0 lg:w-1/2 pprojeto-left">
-                Desenvolvi um jogo inspirado no universo do Mario para demonstrar minhas habilidades em programação front-end. 
-                Neste jogo de plataforma simples, os jogadores controlam o Mario e devem evitar obstáculos, representados por canos, 
-                enquanto tentam acumular a maior pontuação possível. O jogo requer timing e reflexos para evitar colisões, 
-                proporcionando uma experiência divertida e desafiadora. Além disso, adicionei elementos de interface gráfica 
-                e animações para tornar a experiência mais imersiva e cativante.
+                I developed a game inspired by the Mario universe to demonstrate my front-end programming skills. 
+                In this simple platform game, players control Mario and must avoid obstacles, represented by pipes, 
+                while trying to accumulate the highest possible score. The game requires timing and reflexes to avoid collisions, 
+                providing a fun and challenging experience. I also added graphical interface elements 
+                and animations to make the experience more immersive and captivating.
             </p>  
             <iframe src="Arquitetura.html" class="borda-iframe w-full lg:w-1/2 rounded-lg shadow-md"></iframe>
         </div>
         
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Projeto Lista.io</h2>
-        <!-- Projeto 2: Mídia na Esquerda, Texto na Direita -->
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Lista.io Project</h2>
+        <!-- Project 2: Media on the Left, Text on the Right -->
         <div class="projeto bg-white p-6 rounded-lg shadow-md mb-10 flex flex-col lg:flex-row-reverse items-center gap-8">
             <p class="pprojeto text-lg lg:text-xl text-gray-700 text-center lg:text-right mb-6 lg:mb-0 lg:w-1/2 pprojeto-right"> 
-            Desenvolvi uma aplicação monolítica focada em facilitar o planejamento diário dos usuários, 
-            com uma interface simples, intuitiva e elegante. É de fácil alteração e visualização, 
-            ideal para aqueles que buscam uma ferramenta acessível e prática. Com um banco de dados integrado e CRUD funcional, 
-            é uma maneira simples de se organizar no cotidiano!
+            I developed a monolithic application focused on facilitating users' daily planning, 
+            with a simple, intuitive, and elegant interface. It is easy to change and visualize, 
+            ideal for those seeking an accessible and practical tool. With an integrated database and functional CRUD, 
+            it is a simple way to organize your daily life!
             </p> 
             <!-- ...existing code... -->
             <video controls class="w-full lg:w-1/2 max-w-xl rounded-lg shadow-md">
                 <source src="./VID/Lista_IO.mp4" type="video/mp4">
-                Seu navegador não suporta o vídeo.
+                Your browser does not support the video.
             </video>
-        </div>  
+        </div>  
         
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Projeto Mapa Web Interativo</h2>
-        <!-- Projeto 3: Texto na Esquerda, Mídia na Direita -->
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Interactive Web Map Project</h2>
+        <!-- Project 3: Text on the Left, Media on the Right -->
         <div class="projeto bg-white p-6 rounded-lg shadow-md mb-10 flex flex-col lg:flex-row items-center lg:space-x-8">
             <p class="pprojeto text-lg lg:text-xl text-gray-700 text-center lg:text-left mb-6 lg:mb-0 lg:flex-1 pprojeto-left"> 
-                Um mapa Web com o intuito de facilitar a visualização de dados do SIGEF e suas devidas áreas no mapa do Brasil, 
-                com integração de busca de locais/coordenadas, geolocalização, busca automática de coordenadas e botões de camadas, 
-                além de uma atualização de dados automática, usando o "blob storage" da plataforma Azure. 
-                Um projeto extenso que visa ajudar os usuários a visualizar o Sistema de Gestão Fundiária brasileiro de forma prática.
+                A Web map designed to facilitate the visualization of SIGEF data and its respective areas on the map of Brazil, 
+                with integration for searching locations/coordinates, geolocation, automatic coordinate search, and layer buttons, 
+                in addition to automatic data updating using Azure's "blob storage" platform. 
+                An extensive project aimed at helping users practically view the Brazilian Land Management System.
             </p>
             <video controls class="w-full lg:w-1/2 max-w-xl rounded-lg shadow-md">
                 <source src="./VID/ConfroMap.mp4" type="video/mp4">
-                Seu navegador não suporta o vídeo.
+                Your browser does not support the video.
             </video>
         </div>
 
-        <!-- Novo Projeto 1: Análise de Dados Financeiros (agora Projeto 4) -->
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Bot de Liquidez Uniswap</h2>
-        <!-- Projeto 4: Mídia na Esquerda, Texto na Direita -->
+        <!-- New Project 1: Uniswap Liquidity Bot (now Project 4) -->
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Uniswap Liquidity Bot</h2>
+        <!-- Project 4: Media on the Left, Text on the Right -->
         <div class="projeto bg-white p-6 rounded-lg shadow-md mb-10 flex flex-col lg:flex-row-reverse items-center gap-8">
             
            <p class="pprojeto text-lg lg:text-xl text-gray-700 text-center lg:text-right mb-6 lg:mb-0 lg:w-1/2 pprojeto-right"> 
-            Este projeto implementa um bot de liquidez para a Uniswap, capaz de implantar um contrato 
-            inteligente ERC-20 em redes de teste como Sepolia e interagir com a DEX para fornecer liquidez 
-            e realizar trocas de tokens. Desenvolvido com Truffle e Node.js, o bot automatiza operações 
-            essenciais de DeFi, integrando serviços como Infura, Alchemy e Metamask para facilitar 
-            a conexão com a blockchain Ethereum.
+            This project implements a liquidity bot for Uniswap, capable of deploying an ERC-20 smart contract 
+            on test networks like Sepolia and interacting with the DEX to provide liquidity 
+            and perform token swaps. Developed with Truffle and Node.js, the bot automates essential DeFi operations, 
+            integrating services like Infura, Alchemy, and Metamask to facilitate connection with the Ethereum blockchain.
             </p> 
             
             <!-- ...existing code... -->
             <img src="./IMG2/Captura de tela_17-8-2025_102347_github.com.JPG" alt="Uniswap Image" class="w-full lg:w-1/2 max-w-xl rounded-lg shadow-md">
             
-        </div>  
-        <!-- Novo Projeto 2: Plataforma E-commerce Responsiva (agora Projeto 5) -->
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Projeto Plataforma E-commerce Responsiva</h2>
-        <!-- Projeto 5: Texto na Esquerda, Mídia na Direita -->
+        </div>  
+        <!-- New Project 2: Responsive E-commerce Platform Project (now Project 5) -->
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Responsive E-commerce Platform Project</h2>
+        <!-- Project 5: Text on the Left, Media on the Right -->
         <div class="projeto bg-white p-6 rounded-lg shadow-md mb-10 flex flex-col lg:flex-row items-center lg:space-x-8">
             <p class="pprojeto text-lg lg:text-xl text-gray-700 text-center lg:text-left mb-6 lg:mb-0 lg:w-1/2 pprojeto-left">
-                Este projeto apresenta o trabalho do nutricionista Fábio Cavalcanti, com foco em promover saúde 
-                e bem-estar por meio de orientação nutricional personalizada. O site oferece uma experiência 
-                clara e acolhedora, destacando os serviços prestados, depoimentos de clientes e formas de contato.<br>
-                <a href="https://fabiocavalcantinutricionista.netlify.app/" target="_blank" class="text-blue-700 hover:underline font-semibold">Acesse o site aqui</a>
+                This project showcases the work of nutritionist Fábio Cavalcanti, focusing on promoting health 
+                and well-being through personalized nutritional guidance. The website offers a clear and welcoming 
+                experience, highlighting the services provided, customer testimonials, and contact methods.<br>
+                <a href="https://fabiocavalcantinutricionista.netlify.app/" target="_blank" class="text-blue-700 hover:underline font-semibold">Access the site here</a>
             </p>
             <!-- Você pode substituir por um vídeo ou iframe de um projeto real, ou um placeholder -->
             <img src="IMG2/Nutricionista - Fábio Cavalcanti e mais 6 páginas - Pessoal — Microsoft​ Edge 17_08_2025 10_32_34.png" class="borda-iframe w-full lg:w-1/2 rounded-lg shadow-md">
         </div>
 
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Jogo da velha Multiplayer</h2>
-        <!-- Projeto 5: Texto na Esquerda, Mídia na Direita -->
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Multiplayer Tic-Tac-Toe</h2>
+        <!-- Project 5: Text on the Left, Media on the Right -->
         <div class="projeto bg-white p-6 rounded-lg shadow-md mb-10 flex flex-col lg:flex-row-reverse items-center gap-8">
             <p class="pprojeto text-lg lg:text-xl text-gray-700 text-center lg:text-right mb-6 lg:mb-0 lg:w-1/2 pprojeto-right"> 
-                Um jogo da velha interativo e responsivo desenvolvido com HTML, JavaScript e TypeScript,
-                 com suporte a dois jogadores e integração com Firebase para persistência de dados e 
-                 regras de segurança, com um chat de conversa totalmente funcional para os jogadores!<br>
-                <a href="https://jogodavelhamultiplayer.netlify.app/" target="_blank" class="text-blue-700 hover:underline font-semibold">Acesse o site aqui</a>
+                An interactive and responsive Tic-Tac-Toe game developed with HTML, JavaScript, and TypeScript,
+                with support for two players and integration with Firebase for data persistence and 
+                security rules, featuring a fully functional chat for players!<br>
+                <a href="https://jogodavelhamultiplayer.netlify.app/" target="_blank" class="text-blue-700 hover:underline font-semibold">Access the site here</a>
             </p>
             <!-- Você pode substituir por um vídeo ou iframe de um projeto real, ou um placeholder -->
             <img src="IMG2/SI20252_A e mais 3 páginas - Pessoal — Microsoft​ Edge 29_08_2025 19_48_41.png" class="borda-iframe w-full lg:w-1/2 rounded-lg shadow-md">
@@ -148,25 +147,25 @@
 
     </section>
     
-    <!-- Seção Sobre Aprimorada -->
-    <section id="sobre" class="container mx-auto p-6 md:p-10 lg:p-12 mt-8 bg-blue-100 rounded-lg shadow-inner flex flex-col lg:flex-row items-center lg:space-x-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-6 lg:mb-0 lg:w-1/4">Sobre</h2>
+    <!-- Enhanced About Section -->
+    <section id="about" class="container mx-auto p-6 md:p-10 lg:p-12 mt-8 bg-blue-100 rounded-lg shadow-inner flex flex-col lg:flex-row items-center lg:space-x-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-6 lg:mb-0 lg:w-1/4">About</h2>
         <div class="flex flex-col lg:flex-row items-center lg:space-x-8 w-full lg:w-3/4">
-            <img src="./IMG2/fotoproffelipera.jpeg" alt="Foto de Perfil de Felipe Ulisses" class="minhaFoto rounded-full w-48 h-48 object-cover shadow-lg mb-6 lg:mb-0 lg:flex-shrink-0 lg:min-w-[192px]">
+            <img src="./IMG2/fotoproffelipera.jpeg" alt="Felipe Ulisses Profile Picture" class="minhaFoto rounded-full w-48 h-48 object-cover shadow-lg mb-6 lg:mb-0 lg:flex-shrink-0 lg:min-w-[192px]">
             <p class="text-lg lg:text-xl text-gray-700 text-center lg:text-left leading-relaxed">
-                Sou um <strong class="text-blue-700">engenheiro de software freelancer</strong> com dois anos de experiência, 
-                especializado em <strong class="text-blue-700">HTML, CSS, JavaScript, Java, MySQL e Flutter</strong>. 
-                Atualmente, atuo como <strong class="text-blue-700">Arquiteto e Desenvolvedor Front-End na Horizon</strong>, 
-                liderando o desenvolvimento das interfaces do <strong class="text-blue-700">ConectaVital e do Wave</strong>. 
-                Minha paixão é entregar <strong class="text-blue-700">soluções digitais de alta qualidade</strong>, 
-                transformando ideias em aplicações robustas e intuitivas, sempre focado em superar as expectativas dos clientes.
+                I am a <strong class="text-blue-700">freelance software engineer</strong> with three years of experience, 
+                specializing in <strong class="text-blue-700">HTML, CSS, JavaScript, Java, MySQL, and Flutter</strong>. 
+                I currently work as a <strong class="text-blue-700">Front-End Architect and Developer at Horizon</strong>, 
+                leading the development of the interfaces for <strong class="text-blue-700">ConectaVital and Wave</strong>. 
+                My passion is delivering <strong class="text-blue-700">high-quality digital solutions</strong>, 
+                transforming ideas into robust and intuitive applications, always focused on exceeding client expectations.
             </p>
         </div>
     </section>
 
-    <!-- Seção Contato Aprimorada -->
-    <section id="contato" class="container mx-auto p-6 md:p-10 lg:p-12 mt-8 bg-blue-200 rounded-lg shadow-inner">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-8">Contato</h2>
+    <!-- Enhanced Contact Section -->
+    <section id="contact" class="container mx-auto p-6 md:p-10 lg:p-12 mt-8 bg-blue-200 rounded-lg shadow-inner">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-8">Contact</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-lg text-gray-700">
             <p class="flex items-center justify-center space-x-3 bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <!-- LinkedIn Icon -->
@@ -213,7 +212,7 @@
     </section>
     
     <footer class="bg-gray-800 text-white p-4 text-center mt-8">
-        <p class="text-sm">&copy; 2025 FelipeUCAA. Todos os direitos reservados.</p>
+        <p class="text-sm">&copy; 2025 FelipeUCAA. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
